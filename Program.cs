@@ -11,7 +11,7 @@ namespace pipGUI
 		static void Main(string[] args)
 		{
 		start:
-			Console.Title = "pip GUI now in C# v1.3";
+			Console.Title = "pip GUI now in C# v1.4";
 
 			Console.Clear();
 			ASCI.ASCIII();
@@ -97,16 +97,6 @@ namespace pipGUI
 			if (inpdetc.Key == ConsoleKey.NumPad8)
 			{
 				optionsOP8.opt8();
-			}
-
-
-			//==========================================|error handeler|==========================================
-			if (inpdetc.Key == ConsoleKey.Enter)
-			{
-				Errorhandeler.Ehandel();
-				Console.WriteLine("enter an option");
-				Console.ReadKey();
-				goto start;
 			}
 
 

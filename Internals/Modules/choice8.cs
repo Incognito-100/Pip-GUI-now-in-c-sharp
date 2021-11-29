@@ -12,18 +12,18 @@ namespace pipGUI
 		{
 			Console.Clear();
 
-			string fuck = "/C pip freeze > requirements.txt";
+			string com1 = "/C pip freeze > requirements.txt";
 
-			System.Diagnostics.Process.Start("CMD.exe", fuck);
+			System.Diagnostics.Process.Start("CMD.exe", com1);
 
 			string filee = "/C pip uninstall -r requirements.txt -y";
 			System.Diagnostics.Process.Start("CMD.exe", filee);
 
-			string jackass = "/C pip cache purge";
-			System.Diagnostics.Process.Start("CMD.exe", jackass);
+			string com2 = "/C pip cache purge";
+			System.Diagnostics.Process.Start("CMD.exe", com2);
 
-			string milf = "/C del requirements.txt";
-			System.Diagnostics.Process.Start("CMD.exe", milf);
+			string com3 = "/C del requirements.txt";
+			System.Diagnostics.Process.Start("CMD.exe", com3);
 
 			Console.ReadKey();
 			Console.Clear();
