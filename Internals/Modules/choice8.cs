@@ -12,21 +12,7 @@ namespace pipGUI
 		{
 			Console.Clear();
 
-			string com1 = "/C pip freeze > requirements.txt";
-
-			System.Diagnostics.Process.Start("CMD.exe", com1);
-
-			string filee = "/C pip uninstall -r requirements.txt -y";
-			System.Diagnostics.Process.Start("CMD.exe", filee);
-
-			string com2 = "/C pip cache purge";
-			System.Diagnostics.Process.Start("CMD.exe", com2);
-
-			string com3 = "/C del requirements.txt";
-			System.Diagnostics.Process.Start("CMD.exe", com3);
-
-			Console.ReadKey();
-			Console.Clear();
+			System.Environment.Exit(0);
 		}
 	}
 }
