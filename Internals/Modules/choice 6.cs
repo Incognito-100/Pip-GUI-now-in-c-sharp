@@ -10,19 +10,45 @@ namespace pipGUI
 	{
 		public static void opt6()
 		{
+		start:
 			Console.Clear();
 			string cmdopt6;
 
-			Console.Write("type directory path to project > ");
+			Console.Write("drag puthon file onto the console > ");
 			string userimpot5 = Console.ReadLine();
 
-			System.IO.Directory.SetCurrentDirectory(userimpot5);
-			cmdopt6 = "/C dir";
-			System.Diagnostics.Process.Start("CMD.exe", cmdopt6);
 
-			Console.WriteLine("please imput the name of the python file with extention");
+			string pfname = userimpot5;
 
-			Console.WriteLine("will add later");
+
+			string text = File.ReadAllText(pfname);
+			Console.WriteLine(text);
+
+			//==========================================| ReaderWriterLockSlim the path to the file |==========================================
+
+			 Console.WriteLine("please type or paste the lines ot text after the imput function");
+			
+			string inpinf = Console.ReadLine();
+			Console.WriteLine(inpinf);
+			Console.WriteLine("is this corret? (Y/N)");
+
+			ConsoleKeyInfo inpdetc = Console.ReadKey();
+
+
+			//==========================================|y|==========================================
+			if (inpdetc.Key == ConsoleKey.Y)
+			{
+				System.IO.Directory.CreateDirectory("requirements files");
+				System.IO.Directory.SetCurrentDirectory("requirements files");
+				System.IO.File.WriteAllText("requirements.txt", inpinf);
+			}
+
+			//==========================================|n|==========================================
+			if (inpdetc.Key == ConsoleKey.N)
+			{
+				goto start;
+			}
+
 
 			Console.ReadKey();
 			Console.Clear();
