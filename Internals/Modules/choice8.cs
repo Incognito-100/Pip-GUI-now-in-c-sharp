@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace pipGUI
+﻿namespace pipGUI
 {
-	class optionsOP8
-	{
-		public static void opt8()
-		{
-			Console.Clear();
+    internal class optionsOP8
+    {
+        public static void opt8()
+        {
+            Console.Clear();
 
-			System.Environment.Exit(0);
-		}
-	}
+            System.Environment.Exit(0);
+        }
+    }
 }
