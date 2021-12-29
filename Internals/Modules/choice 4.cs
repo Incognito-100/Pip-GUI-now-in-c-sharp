@@ -1,4 +1,6 @@
-﻿namespace pipGUI
+﻿using System.Diagnostics;
+
+namespace pipGUI
 {
     internal class optionsOP4
     {
@@ -11,7 +13,7 @@
             string userimpot3 = Console.ReadLine();
 
             opt4sel = "/C pip install -r " + userimpot3;
-            System.Diagnostics.Process.Start("CMD.exe", opt4sel);
+            Process.Start("CMD.exe", opt4sel);
             Console.ReadKey();
             Console.Clear();
         }

@@ -1,4 +1,6 @@
-﻿namespace pipGUI
+﻿using System.Diagnostics;
+
+namespace pipGUI
 {
     internal class optionsOP5
     {
@@ -11,7 +13,7 @@
             string userimpot4 = Console.ReadLine();
 
             opt5sel = "/C pip uninstall -r " + userimpot4 + " -y";
-            System.Diagnostics.Process.Start("CMD.exe", opt5sel);
+            Process.Start("CMD.exe", opt5sel);
             Console.ReadKey();
             Console.Clear();
         }

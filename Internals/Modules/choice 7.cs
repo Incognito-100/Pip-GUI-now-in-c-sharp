@@ -1,4 +1,6 @@
-﻿namespace pipGUI
+﻿using System.Diagnostics;
+
+namespace pipGUI
 {
     internal class optionsOP7
     {
@@ -7,18 +9,18 @@
             Console.Clear();
 
             string com = "/C pip freeze > requirements.txt";
-            System.Diagnostics.Process.Start("CMD.exe", com);
+            Process.Start("CMD.exe", com);
 
             string filee = "/C pip uninstall -r requirements.txt -y";
-            System.Diagnostics.Process.Start("CMD.exe", filee);
+            Process.Start("CMD.exe", filee);
 
             string scom = "/C pip cache purge";
-            System.Diagnostics.Process.Start("CMD.exe", scom);
+            Process.Start("CMD.exe", scom);
 
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
 
             string rmfile = "/C del requirements.txt";
-            System.Diagnostics.Process.Start("CMD.exe", rmfile);
+            Process.Start("CMD.exe", rmfile);
 
             Console.ReadKey();
             Console.Clear();
