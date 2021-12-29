@@ -15,8 +15,7 @@
             string scom = "/C pip cache purge";
             System.Diagnostics.Process.Start("CMD.exe", scom);
 
-            Console.WriteLine("press any key to delete file");
-            Console.ReadKey();
+            Thread.Sleep(500);
 
             string rmfile = "/C del requirements.txt";
             System.Diagnostics.Process.Start("CMD.exe", rmfile);
