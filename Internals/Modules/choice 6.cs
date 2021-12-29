@@ -6,42 +6,27 @@
         {
         start:
             Console.Clear();
-            string cmdopt6;
 
-            Console.Write("drag puthon file onto the console > ");
-            string userimpot5 = Console.ReadLine();
+            Console.WriteLine("drag python file onto the console");
+            Console.Write("> ");
 
-            string pfname = userimpot5;
+            string filename = Console.ReadLine();
 
-            string text = File.ReadAllText(pfname);
-            Console.WriteLine(text);
+            if (filename == null)
+                return;
 
-            //==========================================| ReaderWriterLockSlim the path to the file |==========================================
-
-            Console.WriteLine("please type or paste the lines ot text after the imput function");
-
-            string inpinf = Console.ReadLine();
-            Console.WriteLine(inpinf);
-            Console.WriteLine("is this corret? (Y/N)");
-
-            ConsoleKeyInfo inpdetc = Console.ReadKey();
-
-            //==========================================|y|==========================================
-            if (inpdetc.Key == ConsoleKey.Y)
+            string[] lines = File.ReadAllLines(filename);
+            foreach (string line in lines)
             {
-                System.IO.Directory.CreateDirectory("requirements files");
-                System.IO.Directory.SetCurrentDirectory("requirements files");
-                System.IO.File.WriteAllText("requirements.txt", inpinf);
-            }
+                string[] s = line.Split("import");
 
-            //==========================================|n|==========================================
-            if (inpdetc.Key == ConsoleKey.N)
-            {
-                goto start;
-            }
+                //  s[0] = before delimiter
+                //  s[1] = after delimiter
 
-            Console.ReadKey();
-            Console.Clear();
+                Console.WriteLine(s[0]);
+                Console.WriteLine(s[1]);
+                Console.ReadKey();
+            }
         }
     }
 }
