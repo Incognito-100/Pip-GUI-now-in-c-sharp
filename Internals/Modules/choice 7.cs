@@ -7,7 +7,6 @@
             Console.Clear();
 
             string com = "/C pip freeze > requirements.txt";
-
             System.Diagnostics.Process.Start("CMD.exe", com);
 
             string filee = "/C pip uninstall -r requirements.txt -y";
@@ -18,6 +17,7 @@
 
             Console.WriteLine("press any key to delete file");
             Console.ReadKey();
+
             string rmfile = "/C del requirements.txt";
             System.Diagnostics.Process.Start("CMD.exe", rmfile);
 
