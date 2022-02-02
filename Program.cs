@@ -29,6 +29,8 @@ namespace pipGUI
             Console.WriteLine();
 
             Console.WriteLine(" [8] exits the program");
+
+            Console.WriteLine();
             Console.Write("> ");
 
             //==========================================|get key imput|==========================================
@@ -74,8 +76,12 @@ namespace pipGUI
 
                 //==========================================|choice 8|==========================================
                 case "8":
-                    optionsOP8.opt8();
+                    Environment.Exit(0);
                     break;
+            }
+            if (string.IsNullOrEmpty(userinput))
+            {
+                goto start;
             }
         }
     }
