@@ -1,6 +1,8 @@
-﻿using Console = Colorful.Console;
+﻿using idk_whayt_to_maek.Internals.Modules;
+using idk_whayt_to_maek.Internals.visual;
+using Console = Colorful.Console;
 
-namespace pipGUI
+namespace idk_whayt_to_maek
 {
     internal class Program
     {
@@ -78,10 +80,12 @@ namespace pipGUI
                 case "8":
                     Environment.Exit(0);
                     break;
-            }
-            if (string.IsNullOrEmpty(userinput))
-            {
-                goto start;
+
+                //==========================================|if userimp is not valid|==========================================
+                default:
+                    Console.WriteLine("invalid imput");
+                    Thread.Sleep(300);
+                    goto start;
             }
         }
     }

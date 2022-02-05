@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using Console = Colorful.Console;
 
-namespace pipGUI
+namespace idk_whayt_to_maek.Internals.visual
 {
     internal class ASCI
     {

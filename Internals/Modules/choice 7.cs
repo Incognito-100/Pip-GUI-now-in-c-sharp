@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace pipGUI
+namespace idk_whayt_to_maek.Internals.Modules
 {
     internal class optionsOP7
     {
