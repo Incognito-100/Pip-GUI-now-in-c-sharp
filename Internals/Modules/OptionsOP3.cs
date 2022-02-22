@@ -2,9 +2,9 @@
 
 namespace idk_whayt_to_maek.Internals.Modules
 {
-    internal class optionsOP3
+    internal class OptionsOP3
     {
-        public static void opt3()
+        public static void Start()
         {
             Console.Clear();
             string opt3sel;

@@ -5,7 +5,7 @@ namespace idk_whayt_to_maek.Internals.visual
 {
     internal class ASCI
     {
-        public static void ASCIII()
+        public static void Drawasci()
         {
             Console.WriteLine("");
             Console.WriteLine("");

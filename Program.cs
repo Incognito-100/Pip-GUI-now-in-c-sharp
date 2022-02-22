@@ -9,10 +9,10 @@ namespace idk_whayt_to_maek
         public static void Main(string[] args)
         {
         start:
-            Console.Title = "pip GUI now in C# v1.5";
+            Console.Title = "pip GUI now in C# v1.6";
 
             Console.Clear();
-            ASCI.ASCIII();
+            ASCI.Drawasci();
 
             Console.WriteLine(" [1] list all packages");
 
@@ -36,48 +36,48 @@ namespace idk_whayt_to_maek
             Console.Write("> ");
 
             //==========================================|get key imput|==========================================
-            string userinput = Console.ReadLine();
+            int userinput = int.Parse(Console.ReadLine());
 
             //==========================================|start switch|==========================================
             switch (userinput)
             {
                 //==========================================|choice 1|==========================================
-                case "1":
-                    optionsOP1.opt1();
+                case 1:
+                    OptionsOP1.Start();
                     goto start;
 
                 //==========================================|choice 2|==========================================
-                case "2":
-                    optionsOP2.opt2();
+                case 2:
+                    OptionsOP2.Start();
                     goto start;
 
                 //==========================================|choice 3|==========================================
-                case "3":
-                    optionsOP3.opt3();
+                case 3:
+                    OptionsOP3.Start();
                     goto start;
 
                 //==========================================|choice 4|==========================================
-                case "4":
-                    optionsOP4.opt4();
+                case 4:
+                    OptionsOP4.Start();
                     goto start;
 
                 //==========================================|choice 5|==========================================
-                case "5":
-                    optionsOP5.opt5();
+                case 5:
+                    OptionsOP5.Start();
                     goto start;
 
                 //==========================================|choice 6|==========================================
-                case "6":
-                    optionsOP6.opt6();
+                case 6:
+                    OptionsOP6.Start();
                     goto start;
 
                 //==========================================|choice 7|==========================================
-                case "7":
-                    optionsOP7.opt7();
+                case 7:
+                    OptionsOP7.Start();
                     goto start;
 
                 //==========================================|choice 8|==========================================
-                case "8":
+                case 8:
                     Environment.Exit(0);
                     break;
 

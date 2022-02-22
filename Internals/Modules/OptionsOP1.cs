@@ -1,8 +1,8 @@
 ﻿namespace idk_whayt_to_maek.Internals.Modules
 {
-    internal class optionsOP1
+    internal class OptionsOP1
     {
-        public static void opt1()
+        public static void Start()
         {
             Console.Clear();
 
@@ -13,6 +13,7 @@
             Console.WriteLine("hit any key to exit");
 
             Console.ReadKey();
+
             Console.Clear();
         }
     }
