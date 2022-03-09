@@ -5,12 +5,13 @@
         public static void Start()
         {
             Console.Clear();
-            string opt2sel;
 
-            Console.Write("imput a pacage you want to install > ");
+            Console.Write("imput a pacage you want to install");
+            Console.Write("> ");
+
             string userimpot1 = Console.ReadLine();
 
-            opt2sel = "/C pip install " + userimpot1;
+            string opt2sel = "/C pip install " + userimpot1;
             System.Diagnostics.Process.Start("CMD.exe", opt2sel);
             Console.ReadKey();
             Console.Clear();

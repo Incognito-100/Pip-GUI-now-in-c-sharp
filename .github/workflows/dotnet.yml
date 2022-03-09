@@ -3,18 +3,15 @@ name: .NET
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  
 
 jobs:
   build:
-
-    runs-on: windows-2022
-
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+      - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies

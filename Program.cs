@@ -9,7 +9,7 @@ namespace idk_whayt_to_maek
         public static void Main(string[] args)
         {
         start:
-            Console.Title = "pip GUI now in C# v1.6";
+            Console.Title = "pip GUI now in C# v1.7";
 
             Console.Clear();
             ASCI.Drawasci();
