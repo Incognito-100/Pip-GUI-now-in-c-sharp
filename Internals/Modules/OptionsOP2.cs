@@ -11,7 +11,7 @@
 
             string userimpot1 = Console.ReadLine();
 
-            string opt2sel = "/C pip install " + userimpot1;
+            string opt2sel = $"/C pip install {userimpot1}";
             System.Diagnostics.Process.Start("CMD.exe", opt2sel);
             Console.ReadKey();
             Console.Clear();

@@ -13,7 +13,7 @@ namespace idk_whayt_to_maek.Internals.Modules
 
             string userimpot4 = Console.ReadLine();
 
-            string opt5sel = "/C pip uninstall -r " + userimpot4 + " -y";
+            string opt5sel = $"/C pip uninstall -r {userimpot4} -y";
             Process.Start("CMD.exe", opt5sel);
             Console.ReadKey();
             Console.Clear();
