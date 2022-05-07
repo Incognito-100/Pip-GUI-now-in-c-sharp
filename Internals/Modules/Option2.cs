@@ -1,6 +1,6 @@
 ﻿namespace idk_whayt_to_maek.Internals.Modules
 {
-    internal class OptionsOP2
+    internal class Option2
     {
         public static void Start()
         {

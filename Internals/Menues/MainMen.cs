@@ -1,5 +1,5 @@
-﻿using idk_whayt_to_maek.Internals.visual;
-using idk_whayt_to_maek.Internals.Modules;
+﻿using idk_whayt_to_maek.Internals.Modules;
+using idk_whayt_to_maek.Internals.visual;
 using Console = Colorful.Console;
 
 namespace idk_whayt_to_maek.Internals.Menues
@@ -30,61 +30,59 @@ namespace idk_whayt_to_maek.Internals.Menues
 
             Console.WriteLine();
 
-            Console.WriteLine(" [8] exits the program");
+            Console.WriteLine(" [x] exits the program");
 
             Console.WriteLine();
             Console.Write("> ");
 
             //==========================================|get key imput|==========================================
-            int userinput = int.Parse(Console.ReadLine());
+            string userinput = Console.ReadLine();
 
             //==========================================|start switch|==========================================
             switch (userinput)
             {
                 //==========================================|choice 1|==========================================
-                case 1:
-                    OptionsOP1.Start();
+                case "1":
+                    Option1.Start();
                     goto start;
 
                 //==========================================|choice 2|==========================================
-                case 2:
-                    OptionsOP2.Start();
+                case "2":
+                    Option2.Start();
                     goto start;
 
                 //==========================================|choice 3|==========================================
-                case 3:
-                    OptionsOP3.Start();
+                case "3":
+                    Option3.Start();
                     goto start;
 
                 //==========================================|choice 4|==========================================
-                case 4:
-                    OptionsOP4.Start();
+                case "4":
+                    Option4.Start();
                     goto start;
 
                 //==========================================|choice 5|==========================================
-                case 5:
-                    OptionsOP5.Start();
+                case "5":
+                    Option5.Start();
                     goto start;
 
                 //==========================================|choice 6|==========================================
-                case 6:
-                    OptionsOP6.Start();
+                case "6":
+                    Option6.Start();
                     goto start;
 
                 //==========================================|choice 7|==========================================
-                case 7:
-                    OptionsOP7.Start();
+                case "7":
+                    Option7.Start();
                     goto start;
 
                 //==========================================|choice 8|==========================================
-                case 8:
+                case "x":
                     Environment.Exit(0);
                     break;
 
                 //==========================================|if userimp is not valid|==========================================
                 default:
-                    Console.WriteLine("invalid imput");
-                    Thread.Sleep(300);
                     goto start;
             }
         }

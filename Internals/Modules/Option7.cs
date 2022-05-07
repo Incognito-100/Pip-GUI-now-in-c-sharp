@@ -2,7 +2,7 @@
 
 namespace idk_whayt_to_maek.Internals.Modules
 {
-    internal class OptionsOP7
+    internal class Option7
     {
         public static void Start()
         {
@@ -18,10 +18,6 @@ namespace idk_whayt_to_maek.Internals.Modules
             {
                 string filee = "/C pip uninstall -r requirements.txt -y";
                 Process.Start("CMD.exe", filee);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
             }
             finally
             {

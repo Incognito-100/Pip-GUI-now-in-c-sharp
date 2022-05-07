@@ -2,7 +2,7 @@
 
 namespace idk_whayt_to_maek.Internals.Modules
 {
-    internal class OptionsOP4
+    internal class Option4
     {
         public static void Start()
         {
