@@ -36,7 +36,7 @@
                 //==========================================|cleanup inports|==========================================
                 foreach (string line in imports)
                 {
-                    string clen = line.Replace("import ", "").Replace(" ", "");
+                    string clen = line.Replace("from ", "").Replace("import ", "").Replace(" ", "");
                     cleand.Add(clen);
                 }
 
