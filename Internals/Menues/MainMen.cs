@@ -32,7 +32,6 @@ namespace idk_whayt_to_maek.Internals.Menues
 
             Console.WriteLine(" [x] exits the program");
 
-            Console.WriteLine();
             Console.Write("> ");
 
             //==========================================|get key imput|==========================================
