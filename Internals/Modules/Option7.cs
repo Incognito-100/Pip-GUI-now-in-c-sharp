@@ -19,6 +19,13 @@ namespace idk_whayt_to_maek.Internals.Modules
                 string filee = "/C pip uninstall -r requirements.txt -y";
                 Process.Start("CMD.exe", filee);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine("somting went wrong try again");
+                Console.WriteLine("details");
+                Console.WriteLine(ex.ToString());
+                Console.ReadKey();
+            }
             finally
             {
                 string scom = "/C pip cache purge";

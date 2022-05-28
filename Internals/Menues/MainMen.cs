@@ -9,7 +9,7 @@ namespace idk_whayt_to_maek.Internals.Menues
         public static void showmen()
         {
         start:
-            Console.Title = "pip GUI now in C# v2.0";
+            Console.Title = "pip GUI now in C# v2.1.1";
 
             Console.Clear();
             ASCI.Drawasci();
