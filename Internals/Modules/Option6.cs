@@ -41,7 +41,7 @@
                 }
 
                 Directory.SetCurrentDirectory(Directory.GetCurrentDirectory());
-                File.WriteAllLines($"{filename} imports.txt", cleand);
+                File.WriteAllLines($"{filename}-imports.txt", cleand);
             }
         }
     }
